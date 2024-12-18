@@ -1,0 +1,35 @@
+.dollar-sign-container {
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 56px;
+    height: 56px;
+}
+
+.dollar-sign-ellipse {
+    width: 56px;
+    height: 56px;
+    background: #E8F9F1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar-sign-number-container {
+    width: 34px;
+    height: 21px;
+    background-image: url('/payment/Vector.png'); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dollar-sign-number {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #1DC072;
+}

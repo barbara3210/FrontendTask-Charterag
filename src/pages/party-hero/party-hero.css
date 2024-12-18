@@ -1,0 +1,211 @@
+.party-hero-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.party-hero-section {
+    position: relative;
+    margin-top: 100px;
+    width: 100vw;
+    min-height: 600px;
+    padding-bottom: 40px;
+}
+
+.party-hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.party-image-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #213553 20.3%, rgba(33, 53, 83, 0.0001) 54.56%);
+    opacity: 1;
+}
+
+.party-title-section {
+    position: absolute;
+    left: 90px;
+    top: 350px;
+    width: 675px;
+    height: auto;
+    gap: 7px;
+    opacity: 1;
+}
+
+.party-small-text {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px;
+    letter-spacing: 1px;
+    text-align: left;
+    width: 112px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.party-big-title {
+    font-family: Poppins, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+    width: 675px;
+    opacity: 1;
+    color: #fff;
+}
+
+.party-paragraphs {
+    position: absolute;
+    top: 780px;
+    left: 90px;
+    width: 580px;
+    gap: 24px;
+    opacity: 1;
+    margin-bottom: auto;
+}
+
+.party-paragraph1,
+.party-paragraph2 {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #062949;
+    margin: 0;
+    width: 580px;
+    opacity: 1;
+    word-wrap: break-word;
+}
+
+.party-paragraph1 {
+    height: auto;
+}
+
+.party-paragraph2 {
+    height: auto;
+    margin-top: 24px;
+}
+
+.party-card-wrapper {
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .party-hero-image {
+        height: 350px;
+    }
+
+    .party-title-section {
+        left: 30px;
+        top: 280px;
+        width: 85%;
+    }
+
+    .party-big-title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .party-small-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .party-paragraphs {
+        top: 380px;
+        width: 85%;
+    }
+
+    .party-paragraph1,
+    .party-paragraph2 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .party-hero-image {
+        height: 250px;
+    }
+
+    .party-title-section {
+        left: 20px;
+        top: 220px;
+        width: 90%;
+    }
+
+    .party-big-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .party-small-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .party-paragraphs {
+        top: 300px;
+        width: 90%;
+    }
+
+    .party-paragraph1,
+    .party-paragraph2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .party-card-wrapper {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .party-hero-image {
+        height: 200px;
+    }
+
+    .party-title-section {
+        left: 10px;
+        top: 180px;
+        width: 95%;
+    }
+
+    .party-big-title {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .party-small-text {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .party-paragraphs {
+        top: 240px;
+        width: 95%;
+    }
+
+    .party-paragraph1,
+    .party-paragraph2 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .party-card-wrapper {
+        margin-top: 10px;
+    }
+}

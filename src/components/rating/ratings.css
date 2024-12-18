@@ -1,0 +1,128 @@
+.experience-container {
+    display: flex;
+    align-items: left;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row; 
+    gap: 211px; 
+    color: #ffffff;
+    margin-bottom: 222px;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+.icon {
+    width: 44px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.rating-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    text-align: left; 
+}
+
+.rating-value {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 20.779px;
+    font-weight: 700;
+    line-height: 120%; 
+    margin-bottom: 4px;
+    text-align: left; 
+}
+
+.rating-text {
+    color: #FFF;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+@media screen and (max-width: 1024px) {
+    .ratings {
+        gap: 15px; 
+    }
+
+    .rating-item {
+        flex: 1 1 calc(33% - 10px); 
+        max-width: 200px; 
+    }
+
+    .icon {
+        width: 32px; 
+        height: 30px;
+    }
+
+    .rating-value {
+        font-size: 18px;
+    }
+
+    .rating-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ratings {
+        justify-content: center; 
+        gap: 15px;
+    }
+
+    .rating-item {
+        flex: 1 1 calc(50% - 10px); 
+        max-width: 180px; 
+    }
+
+    .icon {
+        width: 28px;
+        height: 26px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .rating-value {
+        font-size: 16px;
+    }
+
+    .rating-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ratings {
+        gap: 10px;
+        justify-content: center; 
+    }
+
+    .rating-item {
+        flex: 1 1 calc(100% - 10px); 
+        max-width: 100%; 
+    }
+
+    .icon {
+        width: 24px; 
+        height: 22px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+
+    .rating-value {
+        font-size: 14px;
+    }
+
+    .rating-text {
+        font-size: 10px;
+    }
+}

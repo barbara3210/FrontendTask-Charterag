@@ -1,0 +1,254 @@
+.testimonials-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    background: url('/testimonials/Guests\ png\ 1.png') no-repeat center center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.testimonials-content {
+    position: relative;
+    width: 387px;
+    margin-right: 50px;
+    color: #062949;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    z-index: 10;
+}
+
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 177px;
+    background: linear-gradient(to top, #FFFFFF00 0%, #ECFBFF80 60%, #ECFBFF 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.testimonials-title {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 37.8px;
+    letter-spacing: -0.02em;
+    margin-bottom: 55px;
+    color: #062949;
+}
+
+.reviews-container::-webkit-scrollbar {
+    display: none;
+}
+
+.reviews-container {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    cursor: grab;
+    touch-action: pan-y;
+}
+
+.review-card {
+    flex-shrink: 0;
+    width: 500px;
+    height: 337px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 42px 76px 42px 30px;
+    box-shadow: 0px 6px 32px rgba(255, 224, 70, 0.16);
+    position: relative;
+}
+
+.reviews-container:active {
+    cursor: grabbing;
+}
+
+.review-card-content {
+    width: 394px;
+    height: 253px;
+    top: 42px;
+    left: 30px;
+    gap: 16px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    gap: 0px;
+    opacity: 1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.review-name {
+    width: auto;
+    height: 21px;
+    opacity: 1;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+}
+
+.review-stars {
+    width: auto;
+    height: 22.58px;
+    top: 85px;
+    gap: 7.53px;
+    opacity: 1;
+}
+
+.review-title {
+    width: 396px;
+    height: 33px;
+    opacity: 1;
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+}
+
+.review-content {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-container {
+        padding: 40px 20px;
+    }
+
+    .testimonials-content {
+        width: 320px;
+        margin-right: 30px;
+    }
+
+    .review-card {
+        width: 90%;
+        max-width: 400px;
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .review-card-content {
+        width: 100%;
+    }
+
+    .testimonials-title {
+        font-size: 28px;
+    }
+
+    .review-name,
+    .review-title,
+    .review-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    .testimonials-content {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .gradient-overlay {
+        display: none;
+    }
+
+    .review-card {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .review-card-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonials-title {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px; 
+    }
+
+    .background-image {
+        display: none;
+    }
+
+    .review-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .review-name,
+    .review-title,
+    .review-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-container {
+        padding: 20px;
+    }
+
+    .testimonials-content {
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .review-card {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+    }
+
+    .testimonials-title {
+        font-size: 20px;
+    }
+
+    .review-name,
+    .review-title,
+    .review-content {
+        font-size: 12px;
+    }
+}

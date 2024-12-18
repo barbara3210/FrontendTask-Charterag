@@ -1,0 +1,98 @@
+.party-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: #ecfbff;
+    background-image: url('/Tekstura.png');
+    overflow: hidden;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 101px auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.flex-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-slider {
+    flex: 1;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+
+.payment-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 64px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.step-pay {
+    position: relative;
+    margin-bottom: 180px;
+}
+
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 50px 0;
+    }
+
+    .flex-row.reverse {
+        flex-direction: column;
+    }
+
+    .image-slider {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .content {
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .content h1,
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .party-card-wrapper {
+        position: static;
+        margin-top: 30px;
+        width: 100%;
+    }
+}
