@@ -18,56 +18,40 @@ const DestinationsSection = () => {
                 />
             </div>
             <Link href="/party" passHref>
-                <a>
-                    <Route
-                        imageSrc="/routes/party-route.png"
-                        price="€710"
-                        title="Party Route"
-                        progressBars={[
-                            { label: "Party", value: 75 },
-                            { label: "Adventure", value: 30 },
-                        ]}
-                    />
-                </a>
+                <Route
+                    imageSrc="/routes/party-route.png"
+                    price="€710"
+                    title="Party Route"
+                    progressBars={[{ label: "Party", value: 75 }, { label: "Adventure", value: 30 }]}
+                    routeLink="/"  
+                />
             </Link>
             <Link href="/ultra" passHref>
-                <a>
-                    <Route
-                        imageSrc="/routes/ultra-route.png"
-                        price="€792"
-                        title="Ultra Route"
-                        progressBars={[
-                            { label: "Party", value: 95 },
-                            { label: "Adventure", value: 25 },
-                        ]}
-                    />
-                </a>
+                <Route
+                    imageSrc="/routes/ultra-route.png"
+                    price="€792"
+                    title="Ultra Route"
+                    progressBars={[{ label: "Party", value: 95 }, { label: "Adventure", value: 25 }]}
+                    routeLink="/"  
+                />
             </Link>
             <Link href="/greece" passHref>
-                <a>
-                    <Route
-                        imageSrc="/routes/greece-route.png"
-                        price="€710"
-                        title="Greece Route"
-                        progressBars={[
-                            { label: "Party", value: 50 },
-                            { label: "Adventure", value: 80 },
-                        ]}
-                    />
-                </a>
+                <Route
+                    imageSrc="/routes/greece-route.png"
+                    price="€710"
+                    title="Greece Route"
+                    progressBars={[{ label: "Party", value: 50 }, { label: "Adventure", value: 80 }]}
+                    routeLink="/" 
+                />
             </Link>
             <Link href="/adventure" passHref>
-                <a>
-                    <Route
-                        imageSrc="/routes/adventure-route.png"
-                        price="€850"
-                        title="Adventure Route"
-                        progressBars={[
-                            { label: "Party", value: 10 },
-                            { label: "Adventure", value: 90 },
-                        ]}
-                    />
-                </a>
+                <Route
+                    imageSrc="/routes/adventure-route.png"
+                    price="€850"
+                    title="Adventure Route"
+                    progressBars={[{ label: "Party", value: 10 }, { label: "Adventure", value: 90 }]}
+                    routeLink="/" 
+                />
             </Link>
         </div>
     );

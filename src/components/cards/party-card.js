@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // Import Image komponentu
+import Image from 'next/image';
 import './party-card.css';
 
 const PartyCard = () => {
@@ -9,7 +9,6 @@ const PartyCard = () => {
                 Dubrovnik Party Route
             </div>
             <div className="party-card-rating">
-                {/* Zamijenjeno img s Image */}
                 <Image src="/icons/star.png" alt="star" className="star-icon" width={20} height={20} />
                 <span className="rating-text">4.9</span>
                 <span className="reviews-text">Rating of 461 reviews</span>
@@ -17,7 +16,6 @@ const PartyCard = () => {
             <div className="party-card-details">
                 <div className="icon-frame">
                     <div className="icon-frame-content">
-                        {/* Zamijenjeno img s Image */}
                         <Image src="/icons/Icon1.png" alt="Party vibe" className="icon-img" width={40} height={40} />
                         <span className="icon-text">Party vibe</span>
                     </div>

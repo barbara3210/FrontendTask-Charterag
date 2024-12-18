@@ -7,7 +7,6 @@ import Compare from "../pages/compare/compare.js";
 import PaymentPage from "../pages/payment/payment.js";
 import CTA from "../pages/cta/cta.js";
 import Footer from "../pages/footer/footer.js";
-import Party from "../pages/destination-route/party-route/party/party.js";
 
 export default function Home() {
   return (

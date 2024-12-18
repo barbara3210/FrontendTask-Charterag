@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import SectionBlock from '../../components/section/section-block.js';
+import Image from 'next/image';
 import './compare.css';
 
 const Compare = () => {
@@ -9,7 +10,7 @@ const Compare = () => {
     useEffect(() => {
         gsap.to('.compare-page', { opacity: 1, duration: 1 });
         gsap.to('.compare-card', { opacity: 1, duration: 1, stagger: 0.5 });
-        gsap.to('.frame', { opacity: 1, duration: 1, delay: 1.5 });  // Fade in the frame
+        gsap.to('.frame', { opacity: 1, duration: 1, delay: 1.5 });  
     }, []);
 
     return (
@@ -31,24 +32,120 @@ const Compare = () => {
                         <span className="frame-text">from 787€</span>
                     </div>
                     <ul className="card-features">
-                        <li><img src="/icons/check-badge.png" alt="Check" /> experience</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> lorem ipsum dolor</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> dolor sit et</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> lorem ipsum dolor</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> et santi dolor sum</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> ipsum lorem dolor sit et</li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}  
+                                height={20}
+                            />
+                            experience
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            lorem ipsum dolor
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            dolor sit et
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            lorem ipsum dolor
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            et santi dolor sum
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            ipsum lorem dolor sit et
+                        </li>
                     </ul>
                 </div>
 
                 <div className="compare-card" style={{ background: "#FFF" }}>
                     <h3 className="card-title">Individual experience</h3>
                     <ul className="card-features">
-                        <li><img src="/icons/check-badge.png" alt="Check" /> experience</li>
-                        <li><img src="/icons/check-badge.png" alt="Check" /> lorem ipsum dolor</li>
-                        <li><img src="/icons/check-badge-gray.png" alt="Check" /> dolor sit et</li>
-                        <li><img src="/icons/check-badge-gray.png" alt="Check" /> lorem ipsum dolor</li>
-                        <li><img src="/icons/check-badge-gray.png" alt="Check" /> et santi dolor sum</li>
-                        <li><img src="/icons/check-badge-gray.png" alt="Check" /> ipsum lorem dolor sit et</li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            experience
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            lorem ipsum dolor
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge-gray.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            dolor sit et
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge-gray.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            lorem ipsum dolor
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge-gray.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            et santi dolor sum
+                        </li>
+                        <li>
+                            <Image 
+                                src="/icons/check-badge-gray.png" 
+                                alt="Check" 
+                                width={20}
+                                height={20}
+                            />
+                            ipsum lorem dolor sit et
+                        </li>
                     </ul>
                 </div>
             </div>
