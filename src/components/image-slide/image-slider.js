@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { useState } from 'react';
+import Image from 'next/image'; 
 import './imageSlider.css';
 
 const ImageSlider = ({ images }) => {
@@ -22,11 +23,12 @@ const ImageSlider = ({ images }) => {
           &#10094;
         </div>
         <div className="slider-image">
-          <img
+          <Image
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
             width={746}
             height={500}
+            priority
           />
         </div>
         <div className="slider-arrow right" onClick={nextImage}>

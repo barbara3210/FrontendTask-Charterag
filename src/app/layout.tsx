@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.className} ${dmSans.className}`}>
+    <html lang="en" className={`${poppins.className} ${dmSans.className} ${openSans.className}`}>
       <body>{children}</body>
     </html>
   );

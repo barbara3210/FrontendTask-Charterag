@@ -39,10 +39,6 @@ export default function Home() {
       <section id="footer">
         <Footer />
       </section>
-      <section id="party">
-        <Party />
-      </section>
-
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Ratings from "../../components/rating/ratings";
 import SectionBlock from "../../components/section/section-block";
+import Image from "next/image"; // Importanje Image komponente iz Next.js
 import "./experience.css";
 
 const Experience = () => {
@@ -9,7 +10,7 @@ const Experience = () => {
             <div className="ratings-section">
                 <Ratings />
             </div>
-            <div style={{ color: "#F4FAFF", padding: "40px" }}>
+            <div className="section-block-wrapper-custom">
                 <SectionBlock
                     label="Welcome"
                     title="What is Charterag experience"
@@ -23,19 +24,19 @@ const Experience = () => {
             <div className="cards-section">
                 <div className="card">
                     <h3>Sail</h3>
-                    <img src="/experience/experience1.png" alt="Sail" />
+                    <Image src="/experience/experience1.png" alt="Sail" width={500} height={300} />
                 </div>
                 <div className="card">
                     <h3>Party</h3>
-                    <img src="/experience/experience2.png" alt="Party" />
+                    <Image src="/experience/experience2.png" alt="Party" width={500} height={300} />
                 </div>
                 <div className="card">
                     <h3>Explore</h3>
-                    <img src="/experience/experience3.png" alt="Explore" />
+                    <Image src="/experience/experience3.png" alt="Explore" width={500} height={300} />
                 </div>
                 <div className="card">
                     <h3>Relax</h3>
-                    <img src="/experience/experience4.png" alt="Relax" />
+                    <Image src="/experience/experience4.png" alt="Relax" width={500} height={300} />
                 </div>
             </div>
         </div>

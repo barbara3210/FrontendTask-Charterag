@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image"; 
 
 const Review = ({ imageSrc, name, stars, title, content }) => {

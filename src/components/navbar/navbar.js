@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link"; 
 import YButton from "../button/yellow_button";
 import "./navbar.css";
 
@@ -10,7 +11,7 @@ const Navbar = () => {
     const hamburgerRef = useRef(null);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setIsOpen((prev) => !prev);
     };
 
     const closeMenuOnClickOutside = (e) => {
@@ -25,17 +26,16 @@ const Navbar = () => {
 
     useEffect(() => {
         document.addEventListener("click", closeMenuOnClickOutside);
-
         return () => {
             document.removeEventListener("click", closeMenuOnClickOutside);
         };
     }, []);
 
     return (
-        <nav className="navbar">
+        <nav className="navbar" role="navigation" aria-label="Main Navigation">
             <div className="navbar-container">
                 <div className="logo">
-                    <a href="/">
+                    <Link href="/">
                         <Image
                             src="/logo/Charterag.png"
                             alt="Charterag Logo"
@@ -43,29 +43,51 @@ const Navbar = () => {
                             height={29.176}
                             priority
                         />
-                    </a>
+                    </Link>
                 </div>
 
                 <div
                     ref={menuRef}
                     className={`navOptions ${isOpen ? "active" : ""}`}
                 >
-                    <a href="#routes" className="destinations">Destinations</a>
-                    <a href="#how" className="about">How it works</a>
-                    <a href="#experience" className="experience">About</a>
-                    <a href="#bestlife" className="blog">Blog</a>
-                    <a href="#FAQ" className="FAQ">FAQ</a>
+                    <Link href="#routes" className="destinations">
+                        Destinations
+                    </Link>
+                    <Link href="#how" className="about">
+                        How it works
+                    </Link>
+                    <Link href="#experience" className="experience">
+                        About
+                    </Link>
+                    <Link href="#bestlife" className="blog">
+                        Blog
+                    </Link>
+                    <Link href="#FAQ" className="FAQ">
+                        FAQ
+                    </Link>
 
-                    <a href="#login" className="loginopt">Log in</a>
+                    <Link href="#login" className="loginopt">
+                        Log in
+                    </Link>
                 </div>
 
                 <div className="actions">
-                    <a href="#login" className="login">Log in</a>
-                    <a href="/destination-route/party-route/party/party"><YButton text="BOOK NOW" /></a>
-
+                    <Link href="#login" className="login">
+                        Log in
+                    </Link>
+                    <Link href="/destination-route/party-route/party/party">
+                        <YButton text="BOOK NOW" />
+                    </Link>
                 </div>
 
-                <div ref={hamburgerRef} className="hamburger" onClick={toggleMenu}>
+                <div
+                    ref={hamburgerRef}
+                    className="hamburger"
+                    onClick={toggleMenu}
+                    role="button"
+                    aria-label="Toggle menu"
+                    aria-expanded={isOpen}
+                >
                     <span className="bar"></span>
                     <span className="bar"></span>
                     <span className="bar"></span>
