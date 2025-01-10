@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Route from "../../components/route/route";
 import SectionBlock from "../../components/section/section-block";
 import "./destinations.css";
