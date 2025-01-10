@@ -22,28 +22,28 @@ const DestinationsSection = () => {
                 price="€710"
                 title="Party Route"
                 progressBars={[{ label: "Party", value: 75 }, { label: "Adventure", value: 30 }]}
-                routeLink="/party"
+                routeLink="/"
             />
             <Route
                 imageSrc="/routes/ultra-route.png"
                 price="€792"
                 title="Ultra Route"
                 progressBars={[{ label: "Party", value: 95 }, { label: "Adventure", value: 25 }]}
-                routeLink="/ultra"
+                routeLink="/"
             />
             <Route
                 imageSrc="/routes/greece-route.png"
                 price="€710"
                 title="Greece Route"
                 progressBars={[{ label: "Party", value: 50 }, { label: "Adventure", value: 80 }]}
-                routeLink="/greece"
+                routeLink="/"
             />
             <Route
                 imageSrc="/routes/adventure-route.png"
                 price="€850"
                 title="Adventure Route"
                 progressBars={[{ label: "Party", value: 10 }, { label: "Adventure", value: 90 }]}
-                routeLink="/adventure"
+                routeLink="/"
             />
         </div>
     );
